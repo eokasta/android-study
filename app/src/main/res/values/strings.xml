@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">ProjetoAula</string>
-    <string name="txtBotao">Somar</string>
+    <string name="textButtonActivityLogin">Entrar</string>
+    <string name="textLoginButton">Entrar</string>
+    <string name="textSignUpButton">Registrar</string>
+    <string name="textUserNotFound">Usuário não encontrado!</string>
+    <string name="textWrongPassword">Senha incorreta!</string>
+    <string name="textLoginSuccessfully">Seja muito bem-vindo!</string>
+    <string name="textRequiredText">Este campo é obrigatório!</string>
+
+    <string name="textSignUpUsername">Usuário</string>
+    <string name="textSignUpName">Nome</string>
+    <string name="textSignUpEmail">Email</string>
+    <string name="textSignUpPassword">Senha</string>
+
+    <string name="textButtonBack">Voltar</string>
+
 </resources>
