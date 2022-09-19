@@ -14,24 +14,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textSignUpName"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="109dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextSignUpName"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpName" />
 
     <TextView
         android:id="@+id/textViewSignUpEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textSignUpEmail"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextSignUpEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpEmail" />
 
     <TextView
         android:id="@+id/textViewSignUpPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
         android:text="@string/textSignUpPassword"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="321dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextSignUpPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpPassword" />
 
     <EditText
         android:id="@+id/editTextSignUpUsername"
@@ -86,16 +88,59 @@
         android:id="@+id/textViewSignUpUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
         android:text="@string/textSignUpUsername"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintStart_toStartOf="@+id/editTextSignUpUsername"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="48dp"
         android:text="@string/textSignUpButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword" />
+
+    <Button
+        android:id="@+id/buttonSignUpBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back"
+        android:text="@string/textButtonBack"
         tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="433dp" />
+        tools:layout_editor_absoluteY="502dp" />
+
+    <TextView
+        android:id="@+id/textViewUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/textViewNameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <TextView
+        android:id="@+id/textViewEmailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/textViewPasswordInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="356dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
