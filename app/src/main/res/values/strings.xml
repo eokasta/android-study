@@ -15,4 +15,8 @@
 
     <string name="textButtonBack">Voltar</string>
 
+    <string name="textButtonTipCalculator">Calcular Gorjeta</string>
+    <string name="textViewTipValue">Gorjeta:</string>
+    <string name="textViewFinalValueWithTip">Valor final:</string>
+
 </resources>

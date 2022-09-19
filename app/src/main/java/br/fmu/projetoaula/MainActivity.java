@@ -25,4 +25,8 @@ public class MainActivity extends AppCompatActivity {
         ActivityUtil.openActivity(this, SignUpActivity.class);
     }
 
+    public void openTipCalculatorActivity(View view) {
+        ActivityUtil.openActivity(this, TipCalculatorActivity.class);
+    }
+
 }
