@@ -14,7 +14,8 @@ import java.text.NumberFormat;
 
 public class TipCalculatorActivity extends AppCompatActivity {
 
-    private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#,###.#");
+    private static final NumberFormat DECIMAL_FORMAT = DecimalFormat.getCurrencyInstance();
+    private static final NumberFormat PERCENT_FORMAT = DecimalFormat.getPercentInstance();
 
     private EditText editTextValue;
     private SeekBar seekBar;
@@ -55,7 +56,7 @@ public class TipCalculatorActivity extends AppCompatActivity {
         final double tip = value * percent;
         final double finalValue = value + tip;
 
-        textViewTipPercent.setText(DECIMAL_FORMAT.format(progress) + "%");
+        textViewTipPercent.setText(PERCENT_FORMAT.format(progress) + "%");
         textViewTipValue.setText(String.format("R$ %s", DECIMAL_FORMAT.format(tip)));
         textViewFinalValue.setText(String.format("R$ %s", DECIMAL_FORMAT.format(finalValue)));
 
